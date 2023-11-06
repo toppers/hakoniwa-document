@@ -1,4 +1,4 @@
-# アーキテクチャの概要
+# アーキテクチャ概要
 
 箱庭のシステムアーキテクチャの高レベルなビューは下図のとおりです。
 
@@ -39,3 +39,12 @@
   * 箱庭の上では、様々な制御プログラムを利用できますので、箱庭アセットの可能性はとても広いと考えています。
   * 特に、Pythonはその応用範囲は広く、AIとの連携が期待できます。
   * 例えば、Python上でAIエージェントを作成して、箱庭APIを使ってシミュレーション連携させるようなことも容易に実現できます。
+
+# アーキテクチャ詳細
+
+箱庭アーキテクチャの詳細レベルのビューを順番に説明します。
+
+1. [箱庭コア機能](https://github.com/toppers/hakoniwa-document/blob/main/architecture/README-core.md) - 箱庭コア機能の概要を示します。
+2. [箱庭コア機能のAPI](https://github.com/toppers/hakoniwa-document/blob/main/architecture/README-api.md) - 箱庭コア機能のAPIの概要を示します。
+3. [箱庭PDU](https://github.com/toppers/hakoniwa-document/blob/main/architecture/README-pdu.md) - 箱庭アセット間のデータ交換の共通インタフェースの概要を示します。
+4. [箱庭コンダクタ](https://github.com/toppers/hakoniwa-document/blob/main/architecture/README-conductor.md) - 箱庭アセット間のシミュレーションを調停するコンポーネントの概要を示します。
