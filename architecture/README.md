@@ -42,9 +42,11 @@
 
 # アーキテクチャ詳細
 
-箱庭アーキテクチャの詳細レベルのビューを順番に説明します。
+箱庭アーキテクチャの詳細レベルのビューは下図のとおりです。
 
-1. [箱庭コア機能](https://github.com/toppers/hakoniwa-document/blob/main/architecture/README-core.md) - 箱庭コア機能の概要を示します。
-2. [箱庭コア機能のAPI](https://github.com/toppers/hakoniwa-document/blob/main/architecture/README-api.md) - 箱庭コア機能のAPIの概要を示します。
-3. [箱庭PDU](https://github.com/toppers/hakoniwa-document/blob/main/architecture/README-pdu.md) - 箱庭アセット間のデータ交換の共通インタフェースの概要を示します。
-4. [箱庭コンダクタ](https://github.com/toppers/hakoniwa-document/blob/main/architecture/README-conductor.md) - 箱庭アセット間のシミュレーションを調停するコンポーネントの概要を示します。
+![image](https://github.com/toppers/hakoniwa-document/assets/164193/1729d782-791d-4b37-9b63-67bf304a4141)
+
+1. [箱庭コア機能(Hakoniwa Core functions)](https://github.com/toppers/hakoniwa-document/blob/main/architecture/README-core.md) - 箱庭コア機能の概要を示します。
+2. [箱庭コア機能のAPI(Hakoniwa API)](https://github.com/toppers/hakoniwa-document/blob/main/architecture/README-api.md) - 箱庭コア機能のAPIの概要を示します。
+3. [PDU](https://github.com/toppers/hakoniwa-document/blob/main/architecture/README-pdu.md) - 箱庭アセット間のデータ交換の共通インタフェースの概要を示します。
+4. [箱庭コンダクタ(Hakoniwa Conductor)](https://github.com/toppers/hakoniwa-document/blob/main/architecture/README-conductor.md) - 箱庭アセット間のシミュレーションを調停するコンポーネントの概要を示します。
