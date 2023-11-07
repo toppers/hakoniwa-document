@@ -95,8 +95,10 @@
 
 ## 構成適用例
 
-１つのマシンで箱庭を構成する場合でも、OS毎に最適な構成パターンが変わりますので、以下にその適用例を示します。
+箱庭の構成パターンは多種多様ですが、ここでは１つのマシンで箱庭を構成する場合の適用例を示します。
 
-* Windowsの場合
+OS毎に最適な構成パターンが変わりますので、OS毎に示します。
+
+* [Windowsの場合](https://github.com/toppers/hakoniwa-document/blob/main/architecture/examples/README-win.md)
 * MacOSの場合
 * Ubuntuの場合
