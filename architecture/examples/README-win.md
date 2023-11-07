@@ -39,7 +39,7 @@ NETWORK_INTERFACE=$(route | grep '^default' | grep -o '[^ ]*$' | tr -d '\n')
 ifconfig "${NETWORK_INTERFACE}" | grep netmask | awk '{print $2}'
 ```
 
-## UnityのIPアドレス(addr2)
+### UnityのIPアドレス(addr2)
 
 UnityのIPアドレスは、WSL2/Ubuntuの `/etc/resolv.conf` の `nameserver` の IPアドレスを使用します。
 
