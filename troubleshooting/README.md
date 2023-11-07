@@ -4,6 +4,6 @@
 
 OS毎に最適な構成パターンが変わりますので、OS毎に示します。
 
-* Windowsの場合
+* [Windowsの場合](https://github.com/toppers/hakoniwa-document/blob/main/troubleshooting/README-win.md)
 * MacOSの場合
 * Ubuntuの場合
