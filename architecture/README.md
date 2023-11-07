@@ -50,3 +50,27 @@
 2. [箱庭コア機能のAPI(Hakoniwa API)](https://github.com/toppers/hakoniwa-document/blob/main/architecture/README-api.md) - 箱庭コア機能のAPIの概要を示します。
 3. [PDU](https://github.com/toppers/hakoniwa-document/blob/main/architecture/README-pdu.md) - 箱庭アセット間のデータ交換の共通インタフェースの概要を示します。
 4. [箱庭コンダクタ(Hakoniwa Conductor)](https://github.com/toppers/hakoniwa-document/blob/main/architecture/README-conductor.md) - 箱庭アセット間のシミュレーションを調停するコンポーネントの概要を示します。
+
+# ネットワーク構成とインフラストラクチャ
+
+## ネットワークの基本構成
+
+(TODO)
+
+## インフラストラクチャの基本構成
+
+(TODO)
+
+## 構成パターン
+
+現状の箱庭として構成可能なパターンをマトリクスで示します。
+
+(TODO)
+
+## 構成適用例
+
+１つのマシンで箱庭を構成する場合でも、OS毎に最適な構成パターンが変わりますので、以下にその適用例を示します。
+
+* Windowsの場合
+* MacOSの場合
+* Ubuntuの場合
