@@ -76,17 +76,20 @@
 
 ## 構成パターン
 
-基本的に、箱庭は、さまざまな構成でのシミュレーションを可能にすることを目指しています。
-ただ、現時点の箱庭では、物理シミュレータとしてUnityを利用しており、Unityと箱庭との構成可能なパターンに制約があります。
+箱庭では、さまざまな構成でのシミュレーションを可能にすることを目指しています。
 
-以下、構成可能なパターンと可能な場合のUnityと箱庭との間のPDU通信方式をマトリクスで示します。
+ただ、現時点の箱庭は、物理シミュレータとしてUnityを利用しており、Unityと箱庭との構成可能なパターンに制約があります。
 
-| OS | Computer | UnityとのPDU通信方式 |
-|----------|----------|----------|
-| Windows/WSL2 | Docker Container | UDP/MQTT |
-| MacOS(Intel)  | Personal Computer | UDP/MQTT/SharedMemory |
-| MacOS(AppleSilicon)  | Personal Computer  | SharedMemory |
-| Ubuntu | Personal Computer/Docker Container | UDP/MQTT/SharedMemory |
+以下、構成可能なパターンと、Unityと箱庭との間の通信方式（制御向け通信とPDU通信）をマトリクスで示します。
+
+| OS | Computer | 制御向け通信 | PDU通信方式 |
+|----------|----------|----------|----------|
+| Windows/WSL2 | Docker Container | gRPC | UDP, MQTT |
+| MacOS(Intel)  | Personal Computer | gRPC | UDP, MQTT |
+| MacOS(Intel)  | Personal Computer | SHaredMemory | SharedMemory |
+| MacOS(AppleSilicon)  | Personal Computer  | SharedMemory | SharedMemory |
+| Ubuntu | Personal Computer/Docker Container | gRPC | UDP, MQTT |
+| Ubuntu | Personal Computer/Docker Container | SharedMemory | SharedMemory |
 
 
 
