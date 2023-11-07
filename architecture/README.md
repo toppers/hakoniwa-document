@@ -50,6 +50,7 @@
 2. [箱庭コア機能のAPI(Hakoniwa API)](https://github.com/toppers/hakoniwa-document/blob/main/architecture/README-api.md) - 箱庭コア機能のAPIの概要を示します。
 3. [PDU](https://github.com/toppers/hakoniwa-document/blob/main/architecture/README-pdu.md) - 箱庭アセット間のデータ交換の共通インタフェースの概要を示します。
 4. [箱庭コンダクタ(Hakoniwa Conductor)](https://github.com/toppers/hakoniwa-document/blob/main/architecture/README-conductor.md) - 箱庭アセット間のシミュレーションを調停するコンポーネントの概要を示します。
+5. 箱庭アセット
 
 # ネットワーク構成とインフラストラクチャ
 
