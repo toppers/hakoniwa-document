@@ -19,22 +19,145 @@ Unityで箱庭を利用するためには、以下のステップを踏む必要
 
 ## 外部入出力ファイル
 
-### 箱庭コンフィグファイル
+### 箱庭コンフィグファイル(入力：core_config.json)
 
-箱庭コンフィグファイルのファイル名は、`core_config.json` です。 
+`core_config.json` は、Unity側の箱庭アセットとしての機能定義をする重要なコンフィグファイルです。
+
+本ファイルの設定項目は多岐にわたるため、Unityエディタの機能を利用して自動生成しています。
 
 ファイルの配置場所は、Unityエディタの場合は、プロジェクト直下（plugin-srcsディレクトリ内）に配置する必要があります。
 
 Windows版のUnityアプリケーションの場合は、exeファイルと同じディレクトリに配置する必要があります。
 
+以下、各設定項目の説明です(重要なものを列挙)。
+
+#### cpp_mode
+
+* 役割：Unityと箱庭の間のシミュレーション制御通信方式を決める
+* 型：string
+* 必須有無：必須
+* 設定値：２択
+  * asset_rpc：gRPC通信での制御
+  * asset_rpc_cpp：共有メモリでの制御
+
+#### cpp_asset_name
+
+* 役割：Unityの箱庭アセット名
+* 型：string
+* 必須有無：必須
+* 設定値：任意の文字列
+  * デフォルト：UnityAsset
+
+#### core_ipaddr
+
+* 役割：サーバー側の箱庭コンダクタのIPアドレス
+* 型：string
+* 必須有無：`cpp_asset_name`が `asset_rpc`の場合は必須
+* 設定値：IPアドレス
+  * 設定例：127.0.0.1
+
+#### core_portno
+
+* 役割：サーバー側の箱庭コンダクタのgRPCポート番号
+* 型：int
+* 必須有無：`cpp_asset_name`が `asset_rpc`の場合は必須
+* 設定値：ポート番号
+  * デフォルト：50051
+
+#### asset_ipaddr
+
+* 役割：UnityのIPアドレス
+* 型：string
+* 必須有無：`cpp_asset_name`が `asset_rpc`の場合は必須
+* 設定値：ポート番号
+  * 設定例：127.0.0.1
+
+#### pdu_udp_portno_asset
+
+* 役割：UnityのPDU通信がUDP方式の場合のサーバーポート番号
+* 型：int
+* 必須有無：UnityのPDU通信がUDP方式の場合は必須
+* 設定値：ポート番号
+  * デフォルト：54003
+
+#### pdu_configs_parent_path
+
+* 役割：Unityが利用するPDUデータ定義ファイルパス
+* 型：string
+* 必須有無：必須
+* 設定値：ファイルパス
+  * デフォルト：./ros_types/json
 
 
+#### pdu_bin_offset_package_dir
 
-### 箱庭PDU定義ファイル
+* 役割：Unityが利用するPDUデータのバイナリオフセット定義ファイルパス
+* 型：string
+* 必須有無：必須
+* 設定値：ファイルパス
+  * デフォルト：./ros_types/offset
 
-(TODO)
+その他、ロボットの定義情報やPDUデータおよび通信方式の関係性が定義されていますが、省略しています。
+（コントリビュート募集中！）
 
-### 箱庭ログファイル
+### 箱庭コンフィグファイル(入力：hakoniwa_path.json)
+
+`hakoniwa_path.json` は、外部コンポーネントとの連携するためのファイルパスを定義するコンフィグファイルです。
+
+この項目をベースにして、core_config.jsonの一部の項目が自動生成できるものもあります。
+
+ファイルの配置場所は、Unityエディタの場合は、プロジェクト直下（plugin-srcsディレクトリ内）に配置する必要があります。
+
+Windows版のUnityアプリケーションの場合は、exeファイルと同じディレクトリに配置する必要があります。
+
+以下、各設定項目の説明です(重要なものを列挙)。
+
+#### hakoniwa_base
+
+* 役割：hakoniwa_baseの配置ディレクトリパス
+* 型：string
+* 必須有無：Unityエディタで core_config.json を自動生成する場合は必須
+* 設定値：ファイルパス
+
+#### settings
+
+* 役割：RosTopics.jsonの配置ディレクトリパス
+* 型：string
+* 必須有無：Unityエディタで core_config.json を自動生成する場合は必須
+* 設定値：ファイルパス
+
+
+#### pdu_path
+
+* 役割：Unityが利用するPDUデータ定義ファイルパス
+* 型：string
+* 必須有無：必須
+* 設定値：ファイルパス
+  * デフォルト：./ros_types/json
+
+
+#### offset_path
+
+* 役割：Unityが利用するPDUデータのバイナリオフセット定義ファイルパス
+* 型：string
+* 必須有無：必須
+* 設定値：ファイルパス
+  * デフォルト：./ros_types/offset
+
+### 箱庭PDU定義ファイル（入力）
+
+Unityが利用する箱庭のPDU情報を定義するファイル群です。
+
+以下のディレクトリ構成で配置されています。
+
+```
+* ros_types ... トップディレクトリ
+  * json    ... PDUデータ型名とメンバ情報を json形式で管理
+  * offset  ... PDUデータのバイナリオフセットを管理
+```
+
+
+### 箱庭ログファイル（出力）
 
 (TODO)
 
