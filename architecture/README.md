@@ -55,17 +55,40 @@
 
 ## ネットワークの基本構成
 
-(TODO)
+箱庭のネットワークの基本構成は下図のとおりです。
+
+![image](https://github.com/toppers/hakoniwa-document/assets/164193/94eacd63-816b-4413-abfa-a50139c5f3a0)
 
 ## インフラストラクチャの基本構成
 
-(TODO)
+ネットワークの基本構成図にある Computer は、以下の３パターンがあります。
+
+* Personal Computer
+* Docker Container
+* Embedded Device（Raspberry PI や [mROS 2 サポート対応機器](https://github.com/mROS-base/mros2#supported-platform)など）
+
+また、OSのパターンとしては、以下があります。
+
+* Windows/WSL2
+* MacOS(Intel)
+* MacOS(AppleSilicon)
+* Ubuntu
 
 ## 構成パターン
 
-現状の箱庭として構成可能なパターンをマトリクスで示します。
+基本的に、箱庭は、さまざまな構成でのシミュレーションを可能にすることを目指しています。
+ただ、現時点の箱庭では、物理シミュレータとしてUnityを利用しており、Unityと箱庭との構成可能なパターンに制約があります。
 
-(TODO)
+以下、構成可能なパターンと可能な場合のUnityと箱庭との間のPDU通信方式をマトリクスで示します。
+
+| OS | Computer | UnityとのPDU通信方式 |
+|----------|----------|----------|
+| Windows/WSL2 | Docker Container | UDP/MQTT |
+| MacOS(Intel)  | Personal Computer | UDP/MQTT/SharedMemory |
+| MacOS(AppleSilicon)  | Personal Computer  | SharedMemory |
+| Ubuntu | Personal Computer/Docker Container | UDP/MQTT/SharedMemory |
+
+
 
 ## 構成適用例
 
