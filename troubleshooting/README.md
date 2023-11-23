@@ -7,3 +7,7 @@ OS毎に最適な構成パターンが変わりますので、OS毎に示しま�
 * [Windowsの場合](https://github.com/toppers/hakoniwa-document/blob/main/troubleshooting/README-win.md)
 * MacOSの場合
 * Ubuntuの場合
+
+箱庭アセット毎に共通のトラブルシューティング集はこちらを参照ください。
+
+* Unityの場合
