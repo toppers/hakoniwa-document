@@ -10,4 +10,4 @@ OS毎に最適な構成パターンが変わりますので、OS毎に示しま�
 
 箱庭アセット毎に共通のトラブルシューティング集はこちらを参照ください。
 
-* Unityの場合
+* [Unityの場合](https://github.com/toppers/hakoniwa-document/blob/main/troubleshooting/README-unity)
