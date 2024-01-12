@@ -2,7 +2,8 @@
 
 Windowsの場合の箱庭構成例は下図のとおりです。
 
-<img width="871" alt="スクリーンショット 2023-11-07 11 17 39" src="https://github.com/toppers/hakoniwa-document/assets/164193/4dd8afc9-a219-4505-a04e-8801595beb9d">
+![スクリーンショット 2024-01-13 0 41 58](https://github.com/toppers/hakoniwa-document/assets/164193/cb6654a8-7b0d-41be-84bf-7b3151af716b)
+
 
 ## Docker Container
 
@@ -56,6 +57,6 @@ cat /etc/resolv.conf  | grep nameserver | awk '{print $NF}'
 |モジュール名|プロトコル|公開ポート番号|用途|
 |---|---|----|---|
 |箱庭コンダクタ|gRPC/TCP|50051|シミュレーション制御向け通信|
-|箱庭コンダクタ|UDP|54003|PDU通信(箱庭コンダクタ受信側)|
-|箱庭Unity|UDP|54001|PDU通信(Unity受信)|
+|箱庭コンダクタ|UDP|54001|PDU通信(箱庭コンダクタ受信側)|
+|箱庭Unity|UDP|54003|PDU通信(Unity受信)|
 
