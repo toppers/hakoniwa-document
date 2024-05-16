@@ -4,7 +4,7 @@
 
 * C/C++ 版の箱庭コア機能のAPI概要説明
   * [master API](https://github.com/toppers/hakoniwa-core-cpp/blob/main/src/include/hako_master.hpp)
-  * [asset API](https://github.com/toppers/hakoniwa-core-cpp/blob/main/src/include/hako_asset.hpp)
+  * [asset API](https://github.com/toppers/hakoniwa-core-cpp-client/?tab=readme-ov-file#%E7%AE%B1%E5%BA%AD%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88-api)
   * [simevent API](https://github.com/toppers/hakoniwa-core-cpp/blob/main/src/include/hako_simevent.hpp)
 * [gRPCのAPI](https://github.com/toppers/hakoniwa-core-spec/blob/main/hakoniwa_core.proto)
 
