@@ -8,6 +8,15 @@ GitHub Codespacesは、クライドでホストされている開発環境です
 また、開発環境がクラウド上にホストされているため、ローカルPCのリソースに依存せず、高性能な環境で開発できます。
 GitHubのアカウントを持っていれば無料で利用が始められます。
 
+> [!NOTE]
+> GitHub Codespaces は無料で始められますが、月当たりの利用時間やストレージ容量で有償になります。
+>
+> 詳しくは次の情報をご覧ください。
+> - GitHub Codespaces の請求について
+>     - https://docs.github.com/ja/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces
+> - GitHub Codespaces の使用状況の表示
+>     - https://docs.github.com/ja/billing/managing-billing-for-github-codespaces/viewing-your-github-codespaces-usage
+
 本ドキュメントではhakoniwa-core-cpp-clientのサンプルをブラウザを使って実際に動かしてみます。
 
 ### 利用にあたっての準備
